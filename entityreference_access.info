@@ -1,0 +1,4 @@
+name = Entity reference access
+description = Adds new field formatters for entityreference which check access before displaying rendered entities.
+core = 7.x
+dependencies[] = entityreference
