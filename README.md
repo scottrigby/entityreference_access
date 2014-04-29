@@ -5,7 +5,7 @@
 This module adds new field formatters for entityreference which check access
 before displaying rendered entities. Views has access filters such as
 'published', but entityreference rendered entity formatter only checks
-entity_access() for the current user.
+`entity_access()` for the current user.
 
 
 ## Current formatters
@@ -24,9 +24,9 @@ entity_access() for the current user.
 
 ## To do
 
-1. Make a patch to invoke something like hook_field_formatter_view_alter() or
-    hook_field_formatter_prepare_view_alter(). With one of those, we could then
-    add our setting to the existing 'entityreference_entity_view' formatter with
-    hook_field_formatter_info_alter(),
-    hook_field_formatter_settings_form_alter(), and
-    hook_field_formatter_settings_summary_alter().
+1. Make a patch to invoke something like `hook_field_formatter_view_alter()` or
+    `hook_field_formatter_prepare_view_alter()`. With one of those, we could
+    then add our setting to the existing 'entityreference_entity_view' formatter
+    with `hook_field_formatter_info_alter()`,
+    `hook_field_formatter_settings_form_alter()`, and
+    `hook_field_formatter_settings_summary_alter()`.
